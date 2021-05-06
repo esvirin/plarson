@@ -1,0 +1,14 @@
+
+
+    SELECT 'January' AS 'Months', '31' AS 'Days' UNION
+    SELECT 'February', EXTRACT(DAY FROM LAST_DAY(CONCAT(YEAR(CURDATE()),'-02-01'))) UNION
+    SELECT 'March', '31' UNION
+    SELECT 'April', '30' UNION
+    SELECT 'May', '31' UNION
+    SELECT 'June', '30' UNION
+    SELECT 'July', '31' UNION
+    SELECT 'August ', '31' UNION
+    SELECT 'September ', '30' UNION
+    SELECT 'October ', '31' UNION
+    SELECT 'November ', '30' UNION
+    SELECT 'December ', '31';
